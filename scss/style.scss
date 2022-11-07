@@ -74,10 +74,21 @@ tbody {
     background-color: #fff;
 }
 
-.add-base {
-    
-}
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
 
+.add-base {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 #add-game {
     padding: 10px 20px;
     margin: 5px;

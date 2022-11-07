@@ -12,7 +12,7 @@
 			<h1>Baza gier</h1>
 		</header>
 
-		<section class="main-base"></section>
+		<section class="main-base">
 		<table>
 			<thead>
 				<tr>
@@ -46,13 +46,17 @@
 				</tr>
 			</tbody>
 		</table>
-
-        <section class="add-base">
-            <form action="">
-
-            </form>
-            <button id="add-game">Dodaj grę</button>
-        </section>
+    </section>
+		<section class="add-base">
+			<div class="add-base-form">
+                <form>
+                    <input type="text" id="add-title" name="title" placeholder="Tytuł" />
+                    <input type="number" id="add-rate" name="rate" placeholder="Ocena"/>
+                    <input type="text" id="add-description" name="description" placeholder="Opis"/>
+                </form>
+            </div>
+			<button id="add-game">Dodaj grę</button>
+		</section>
 		<script src="./js/main.js"></script>
 	</body>
 </html>
