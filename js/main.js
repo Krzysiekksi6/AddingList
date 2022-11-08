@@ -1,6 +1,7 @@
+const Game = require('./Game.js')
 const addGameButton = document.getElementById('add-game-btn');
 
-function createNextRow(array) {
+function createNextRow(game) {
 	let p = document.createElement('p');
 	let tableBody = document.getElementById('game-table-body');
 	let tableRow = tableBody.insertRow();
