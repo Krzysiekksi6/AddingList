@@ -9,53 +9,58 @@
 	</head>
 	<body>
 		<header>
-			<h1>Baza gier</h1>
+			<h1>Internetowa Baza gier</h1>
 		</header>
 
 		<section class="main-base">
-		<table>
-			<thead>
-				<tr>
-					<th>Tytuł gry</th>
-					<th>Ocena</th>
-					<th>Szczegóły</th>
-					<th>Unuń grę</th>
-				</tr>
-			</thead>
+			<table class="game-table">
+				<thead>
+					<tr>
+						<th>Tytuł gry</th>
+						<th>Ocena</th>
+						<th>Szczegóły</th>
+						<th>Usuń grę</th>
+					</tr>
+				</thead>
 
-			<tbody>
-				<tr>
-					<td>Wiedźmin 3</td>
-					<td>10</td>
-					<td>Pokaż Szczegóły</td>
-					<td>Usuń</td>
-				</tr>
+				<tbody>
+					<tr>
+						<td><p>The Sims 4</p></td>
+						<td><p>8</p></td>
+						<td><p>Pokaż Szczegóły</p></td>
+						<td><p>Usuń</p></td>
+					</tr>
 
-				<tr>
-					<td>Starcraft</td>
-					<td>7</td>
-					<td>Pokaż Szczegóły</td>
-					<td>Usuń</td>
-				</tr>
+					<tr>
+						<td><p>Wiedźmin 3</p></td>
+						<td><p>9</p></td>
+						<td><p>Pokaż Szczegóły</p></td>
+						<td><p>Usuń</p></td>
+					</tr>
 
-				<tr>
-					<td>The Sims</td>
-					<td>8</td>
-					<td>Pokaż Szczegóły</td>
-					<td>Usuń</td>
-				</tr>
-			</tbody>
-		</table>
-    </section>
+					<tr>
+						<td><p>Grand Theft Auto V</p></td>
+						<td><p>9.5</p></td>
+						<td><p>Pokaż Szczegóły</p></td>
+						<td><p>Usuń</p></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
 		<section class="add-base">
 			<div class="add-base-form">
-                <form>
-                    <input type="text" id="add-title" name="title" placeholder="Tytuł" />
-                    <input type="number" id="add-rate" name="rate" placeholder="Ocena"/>
-                    <input type="text" id="add-description" name="description" placeholder="Opis"/>
-                </form>
-            </div>
-			<button id="add-game">Dodaj grę</button>
+				<form>
+					<input type="text" id="add-title" name="title" placeholder="Tytuł" />
+					<input type="number" id="add-rate" name="rate" placeholder="Ocena" />
+					<input
+						type="text"
+						id="add-description"
+						name="description"
+						placeholder="Opis"
+					/>
+				</form>
+			</div>
+			<button id="add-game-btn">Dodaj grę</button>
 		</section>
 		<script src="./js/main.js"></script>
 	</body>

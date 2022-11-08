@@ -48,51 +48,91 @@ textarea {
 	resize: vertical;
 }
 
-// MY STYLE
+// TABLE SECTION
 
-table {
+h1 {
+	color: #a00037;
+	font-size: 3rem;
+	text-shadow: 0 0 1px #a00037;
+	text-transform: uppercase;
+}
+
+.game-table {
+	margin: 25px 0;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	min-width: 500px;
+	min-height: 150px;
+	font-size: 1.2rem;
+	font-weight: bold;
 	border-collapse: collapse;
-	border-spacing: 0;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-table,
-td,
-th {
-    border: 1px solid black;
+.game-table thead tr {
+	background-color: #009879;
+	color: #ffffff;
+	text-align: left;
 }
- 
-td,
-th {
-    padding: 5px 20px;
+
+.game-table th,
+.game-table td {
+	padding: 12px 15px;
 }
- 
-thead {
-    background-color: #087f23;
+
+.game-table tbody tr:nth-child(odd) {
+	text-align: left;
+	background-color: #fff;
 }
- 
-tbody {
-    background-color: #fff;
+
+.game-table tbody tr:nth-child(even) {
+	text-align: left;
+	background-color: #ddd;
+	border-top: 1px solid #cfcece;
+	border-bottom: 1px solid#cfcece;
+	font-weight: bold;
+	color: #009879;
+}
+
+.game-table tr:last-child td:first-child {
+	border-bottom-left-radius: 10px;
+}
+
+.game-table tr:last-child td:last-child {
+	border-bottom-right-radius: 10px;
+}
+
+// FORM SECTION
+
+.add-base {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+form {
+	min-width: 500px;
 }
 
 input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-.add-base {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	font-size: 1.2rem;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
 }
-#add-game {
-    padding: 10px 20px;
-    margin: 5px;
-    color: #fff;
-    background-color: #d81b60;
-    border-radius: 5%;
+#add-game-btn {
+	padding: 15px 30px;
+	margin: 5px;
+	color: #fff;
+	background-color: #d81b60;
+	border-radius: 9%;
+	transition: background-color 0.3s;
+}
+
+#add-game-btn:hover {
+	background-color: #a00037;
 }
